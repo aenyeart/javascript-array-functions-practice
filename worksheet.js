@@ -43,9 +43,34 @@ const characters = [
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+const massOver100 = characters.filter(
+  character => character.mass > 100
+); // implicit return obviates brackets
+
 //2. Get characters with height less than 200
+const heightUnder200 = characters.filter(
+  character => character.height < 200
+);
+
 //3. Get all male characters
+const males = characters.filter(
+  character => character.gender === 'male'
+);
+
 //4. Get all female characters
+const females = characters.filter(
+  character => character.gender === 'female'
+);
+
+const goodSide = characters.filter( character => {
+  let lowercase = character.name.toLowerCase();
+  return lowercase.includes('skywalker') || lowercase.includes('leia');
+});
+
+const badSide = characters.filter( character => {
+  let lowercase = character.name.toLowerCase();
+  return lowercase.includes('vader') || lowercase.includes('anakin');
+})
 
 //***SORT***
 //1. Sort by mass
