@@ -135,9 +135,14 @@ const byGender = characters.sort((a,b) => {
 //***EVERY***
 
 //1. Does every character have blue eyes?
+const everyEyeBlue = characters.every(char => char.eye_color === 'blue');
+
 //2. Does every character have mass more than 40?
+const everyMassOver40 = characters.every(char => char.mass > 40);
 //3. Is every character shorter than 200?
+const everyHeightUnder200 = characters.every(char => char.height < 200);
 //4. Is every character male?
+const everyGenderMale = characters.every(char => char.gender === 'male');
 
 
 //***SOME***
