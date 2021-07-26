@@ -148,6 +148,10 @@ const everyGenderMale = characters.every(char => char.gender === 'male');
 //***SOME***
 
 //1. Is there at least one male character?
+const anyGenderMale = characters.some(char => char.gender === 'male');
 //2. Is there at least one character with blue eyes?
+const anyEyeBlue = characters.some(char => char.eye_color === 'blue');
 //3. Is there at least one character taller than 210?
+const anyHeightOver210 = characters.some(char => char.height > 210);
 //4. Is there at least one character that has mass less than 50?
+const anyMassUnder50 = characters.some(char => char.mass < 50);
